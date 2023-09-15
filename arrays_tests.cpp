@@ -38,4 +38,12 @@ TEST(test_slide_right_one) {
     ASSERT_TRUE(compare_arrays(testing, 1, correct, 1));
 }
 
+TEST(test_flip_one) {
+    int testing[] = {5};
+    int correct[] = {5};
+    flip(testing, 1);
+    ASSERT_TRUE(compare_arrays(testing, 1, correct, 1));
+}
+
+
 TEST_MAIN() // No semicolon!
